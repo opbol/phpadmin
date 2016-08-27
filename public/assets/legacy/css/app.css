@@ -1,0 +1,55 @@
+.image-preview-list img {
+    width: 120px;
+    height: 120px;
+}
+
+.viewer-image-list-hide {
+    display: none;
+}
+
+.preview-image-container {
+    text-align: center;
+}
+
+.preview-image-container img {
+    max-width: 640px !important;
+}
+
+.viewer-image-sm-list img {
+    width: 72px;
+    height: 72px;
+}
+
+.tag {
+    font-size: 14px;
+    padding: .3em .4em 1.4em;
+    margin: 0 .1em;
+}
+
+.tag a {
+    color: #bbb;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.tag a:hover {
+    opacity: 1.0
+}
+
+.tag .remove {
+    vertical-align: bottom;
+    top: 0;
+}
+
+.tag a {
+    margin: 0 0 0 .3em;
+}
+
+.tag a .glyphicon-white {
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.select2 {
+    width: 100%;
+}
