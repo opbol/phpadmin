@@ -66,6 +66,22 @@
                 </li>
             @endpermission
 
+            <li class="{{ Ekko::areActiveRoutes(['model.column.type.index']) }} treeview">
+                <a href="#">
+                    <i class="fa fa-user fa-fw"></i>
+                    <span>@lang('model.models')</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="{{ Ekko::isActiveRoute('model.column.type.index') }}">
+                        <a href="{{ route('model.column.type.list') }}">
+                            <i class="fa fa-circle-o"></i>
+                            @lang('model.column_types')
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             @permission('backups.manage')
             <li class="{{ Ekko::isActiveRoute('backup.index') }}">
                 <a href="{{ route('backup.index') }}">

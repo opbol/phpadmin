@@ -10,6 +10,8 @@ use App\Repositories\Backup\EloquentBackup;
 use App\Repositories\Department\EloquentDepartment;
 use App\Repositories\Country\CountryRepository;
 use App\Repositories\Country\EloquentCountry;
+use App\Repositories\ModelColumnType\EloquentModelColumnType;
+use App\Repositories\ModelColumnType\ModelColumnTypeRepository;
 use App\Repositories\Permission\EloquentPermission;
 use App\Repositories\Permission\PermissionRepository;
 use App\Repositories\Role\EloquentRole;
@@ -45,5 +47,6 @@ class AppServiceProvider extends ServiceProvider {
 		$this->app->singleton(CountryRepository::class, EloquentCountry::class);
 		$this->app->singleton(BackupRepository::class, EloquentBackup::class);
 		$this->app->singleton(DepartmentRepository::class, EloquentDepartment::class);
+        $this->app->singleton(ModelColumnTypeRepository::class, EloquentModelColumnType::class);
 	}
 }

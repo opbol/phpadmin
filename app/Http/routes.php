@@ -300,6 +300,11 @@ Route::group(['middleware' => ['web', 'auth']], function () {
                 'uses' => 'DepartmentController@delete',
             ]);
 
+            Route::get('model/column/type', [
+                'as' => 'model.column.type.list',
+                'uses' => 'ModelColumnTypeController@index',
+            ]);
+
 			Route::get('settings', [
 				'as' => 'settings.general',
 				'uses' => 'SettingsController@general',
